@@ -10,8 +10,8 @@ namespace SimUDuck
 {
     public abstract class Duck
     {
-        IFlyBehavior flyBehavior;
-        IQuackBehavior quackBehavior;
+        public IFlyBehavior flyBehavior;
+        public IQuackBehavior quackBehavior;
 
         public Duck()
         {

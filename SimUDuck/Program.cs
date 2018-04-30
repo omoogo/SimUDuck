@@ -6,7 +6,13 @@ namespace SimUDuck
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Duck mallard = new MallardDuck();
+
+            mallard.PerformQuack();
+            Console.WriteLine();
+            mallard.PerformFly();
+
+            Console.ReadLine();
         }
     }
 }
