@@ -10,8 +10,8 @@ namespace SimUDuck
     {
         public MallardDuck()
         {
-            quackBehavior = new QuackBehavior.Quack();
-            flyBehavior = new FlyBehavior.FlyWithWings();
+            _quackBehavior = new QuackBehavior.Quack();
+            _flyBehavior = new FlyBehavior.FlyWithWings();
         }
 
         public override void Display()

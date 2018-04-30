@@ -11,6 +11,11 @@ namespace SimUDuck
             mallard.PerformQuack();
             Console.WriteLine();
             mallard.PerformFly();
+            
+            Duck model = new ModelDuck();
+            model.PerformFly();
+            model.SetFlyBehavior(new FlyBehavior.FlyRocketPowered());
+            model.PerformFly();
 
             Console.ReadLine();
         }

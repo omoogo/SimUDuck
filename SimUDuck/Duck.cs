@@ -10,24 +10,34 @@ namespace SimUDuck
 {
     public abstract class Duck
     {
-        public IFlyBehavior flyBehavior;
-        public IQuackBehavior quackBehavior;
+        public IFlyBehavior _flyBehavior;
+        public IQuackBehavior _quackBehavior;
 
         public Duck()
         {
 
         }
 
+        public void SetFlyBehavior(IFlyBehavior flyBehavior)
+        {
+           _flyBehavior = flyBehavior;
+        }
+
+        public void SetQuackBehavior(IQuackBehavior quackBehavior)
+        {
+            _quackBehavior = quackBehavior;
+        }
+
         public abstract void Display();
 
         public void PerformFly()
         {
-            flyBehavior.Fly();
+            _flyBehavior.Fly();
         }
 
         public void PerformQuack()
         {
-            quackBehavior.Quack();
+            _quackBehavior.Quack();
         }
 
         public void Swim()
